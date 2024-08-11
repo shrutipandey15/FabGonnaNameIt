@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "apiserver"
+version = "0.1.0"
+description = "Back-office APIs"
+authors = ["fdev31 <fdev31@gmail.com>"]
+license = "proprietary"
+readme = "README.md"
+packages = [
+    {include = "apiserver", from = "src"}
+    ]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+fastapi = "^0.112.0"
+aioredis = "^2.0.1"
+websockets = "^12.0"
+uvicorn = "^0.30.5"
+orjson = "^3.10.7"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.1"
+typing = "^3.10.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
