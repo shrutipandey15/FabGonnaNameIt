@@ -19,7 +19,6 @@ orjson = "^3.10.7"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.1"
-typing = "^3.10.0.0"
 
 [build-system]
 requires = ["poetry-core"]
